@@ -1,0 +1,13 @@
+# QHeal Core Requirements
+numpy>=1.24
+pandas>=1.5
+scikit-learn>=1.1
+joblib>=1.2
+scipy>=1.10
+
+# Quantum Simulation & QPU Compatibility
+pennylane>=0.36.0
+qiskit>=1.0.0
+pennylane-qiskit>=0.36.0
+qiskit-aer>=0.14.0
+qiskit-ibm-runtime>=0.23.0
