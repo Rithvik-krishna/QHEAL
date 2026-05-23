@@ -39,7 +39,7 @@ Unlike systems that simply add "quantum" as a label, QHeal implements:
 | Service | URL | Platform |
 |---|---|---|
 | 🖥️ Frontend | [qheal.vercel.app](https://qheal.vercel.app) | Vercel |
-| ⚙️ Backend API | `/health` endpoint | Render |
+| ⚙️ Backend API | [qheal-backend.onrender.com](https://qheal-backend.onrender.com) | Render |
 | 📦 Source Code | [github.com/Rithvik-krishna/QHEAL](https://github.com/Rithvik-krishna/QHEAL) | GitHub |
 
 ---
