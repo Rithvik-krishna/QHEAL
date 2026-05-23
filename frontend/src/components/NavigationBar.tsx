@@ -50,6 +50,32 @@ export default function NavigationBar({ currentPage, setCurrentPage }: Navigatio
         </li>
         <li className="navbar-nav-item">
           <button 
+            className={`navbar-nav-link ${currentPage === 'why-quantum' ? 'active' : ''}`}
+            onClick={() => setCurrentPage('why-quantum')}
+            style={currentPage === 'why-quantum' ? {} : {
+              position: 'relative',
+            }}
+          >
+            Why Quantum
+            {currentPage !== 'why-quantum' && (
+              <span style={{
+                position: 'absolute',
+                top: '-6px',
+                right: '-8px',
+                fontSize: '7px',
+                fontWeight: 800,
+                background: 'linear-gradient(135deg,#6366f1,#10b981)',
+                color: '#fff',
+                borderRadius: '4px',
+                padding: '1px 4px',
+                textTransform: 'uppercase',
+                letterSpacing: '0.3px'
+              }}>NEW</span>
+            )}
+          </button>
+        </li>
+        <li className="navbar-nav-item">
+          <button 
             className={`navbar-nav-link ${currentPage === 'how-it-works' ? 'active' : ''}`}
             onClick={() => setCurrentPage('how-it-works')}
           >
@@ -68,7 +94,7 @@ export default function NavigationBar({ currentPage, setCurrentPage }: Navigatio
 
       <div className="navbar-right">
         <a 
-          href="https://github.com" 
+          href="https://github.com/Rithvik-krishna/QHEAL" 
           className="btn-github" 
           target="_blank" 
           rel="noopener noreferrer"
@@ -80,3 +106,4 @@ export default function NavigationBar({ currentPage, setCurrentPage }: Navigatio
     </nav>
   );
 }
+

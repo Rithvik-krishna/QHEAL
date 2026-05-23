@@ -5,6 +5,7 @@ import HomePage from './components/HomePage';
 import DiagnosisPage from './components/DiagnosisPage';
 import HowItWorksPage from './components/HowItWorksPage';
 import ImpactPage from './components/ImpactPage';
+import QuantumVsClassical from './components/QuantumVsClassical';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<string>('home');
@@ -19,6 +20,8 @@ export default function App() {
         return <HowItWorksPage />;
       case 'impact':
         return <ImpactPage setCurrentPage={setCurrentPage} />;
+      case 'why-quantum':
+        return <QuantumVsClassical setCurrentPage={setCurrentPage} />;
       default:
         return <HomePage setCurrentPage={setCurrentPage} />;
     }
